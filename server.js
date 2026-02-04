@@ -25,7 +25,8 @@ app.use((req, res, next) => {
 });
 
 // MongoDB Connection
-const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/freshmarket';
+const MONGO_URI =`mongodb+srv://mohammadrilwan230_db_user:OlhiNrzLEfhux2Je@cluster0.iar7zay.mongodb.net/`
+// const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/freshmarket';
 mongoose.connect(MONGO_URI)
     .then(() => console.log('✅ Connected to MongoDB (Compass)'))
     .catch(err => console.error('❌ MongoDB Connection Error:', err));
